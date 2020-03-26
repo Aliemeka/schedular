@@ -1,0 +1,22 @@
+$shadow: 0 2px 8px #9d9d9d;
+$border-color: #44444450;
+$primary: #222266;
+
+.section{
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+}
+
+.card-section{
+    width: 100%;
+    border: 1px $border-color solid;
+    border-radius: 5px;
+
+    .card-heading{
+        color: lighten($primary, 3%);
+    }
+}
+
+.shadowed{
+    box-shadow: $shadow;
+}
