@@ -8,6 +8,7 @@
 }
 
 $primary: #222266;
+$background: #f0f0ff;
 $tablet: 768px;
 
 html, body{
@@ -16,9 +17,33 @@ html, body{
 }
 
 body{
-    font-family: Sen, Gotham, 'san-serif';
+    font-family: Sen, Gotham, sans-serif;
     color: #3e3e3e;
-    background-color: #f0f0ff;
+    background-color: $background;
+}
+
+button.btn, .btn{
+    display: block;
+    position: relative;
+    font-family: Sen, Gotham, sans-serif;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none !important;
+
+    &.btn-sm{
+        padding: 5px 10px;
+        font-size: 10.5pt;
+    }
+
+    &.btn-lg{
+        padding: 10px 25px;
+        font-size: 13pt;
+    }
+    &.btn-blue{
+        background: lighten($primary, 10%);
+        color: $background;
+    }
 }
 
 nav.navbar{
@@ -69,20 +94,24 @@ nav.navbar{
             font-size: 12pt;
             font-weight: 600;
 
-            &:hover{
-                border: 5px solid pink;
-                border-top: 0;
-                border-right: 0;
-                border-left: 0;
-                background: lighten($primary, 5%);
-                font-weight: 700;
-                font-size: 12.2pt;
-            }
+            
 
             a{
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 height: 100%;
+                width: 100%;
+
+                &:hover, &.active{
+                    border: 5px solid pink;
+                    border-top: 0;
+                    border-right: 0;
+                    border-left: 0;
+                    background: lighten($primary, 5%);
+                    font-weight: 700;
+                    font-size: 12.2pt;
+                }
 
                 span{
                     display: none;
