@@ -8,6 +8,22 @@ $light: #fefeff;
     padding: 1rem 1rem;
 }
 
+.top-section{
+    padding: 3rem 1rem;
+    border: 1 lighten($primary, $amount: 20) solid !important;
+}
+
+.dark-bg{
+    background-color: darken($primary, $amount: 20) !important;
+    color: lighten($primary, $amount: 70);
+}
+
+.main-heading{
+    @media screen and (min-width: 768px){
+        font-size: 2.2rem;
+    }
+}
+
 .card-section{
     width: 100%;
     border: 1px $border-color solid;

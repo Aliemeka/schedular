@@ -19,6 +19,7 @@ html, body{
 body{
     font-family: Sen, Gotham, sans-serif;
     color: #3e3e3e;
+    font-size: 14px;
     background-color: $background;
 }
 
@@ -156,7 +157,7 @@ nav.navbar{
     padding-left: 2rem;
 
     @media only screen and (max-width: 763px){
-        padding-right: 1.3rem;
-        padding-left: 1.3rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
