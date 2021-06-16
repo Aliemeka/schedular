@@ -2,8 +2,17 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+require('dotenv').load();
+
 export const environment = {
-  production: false
+  production: false,
+  apiKey: "AIzaSyAUh9J4b1XtuyRXS_Ba4ZbVdid4NmRQaH8",
+  authDomain: "schedular-d7b44.firebaseapp.com",
+  projectId: "schedular-d7b44",
+  storageBucket: "schedular-d7b44.appspot.com",
+  messagingSenderId: "105880545261",
+  appId: "1:105880545261:web:6a77941b46ed6996db69e4",
+  measurementId: "G-YN1BVM5R9T"
 };
 
 /*
